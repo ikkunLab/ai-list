@@ -1,0 +1,419 @@
+{
+  "categories": {
+    "all":      { "label": "すべて",             "c1": "#7c5cff", "c2": "#22d3ee" },
+    "chat":     { "label": "チャット・検索",       "c1": "#7c5cff", "c2": "#4dabf7" },
+    "image":    { "label": "画像生成",             "c1": "#ff6b9d", "c2": "#ffa94d" },
+    "writing":  { "label": "文章・ライティング",   "c1": "#20c997", "c2": "#a9e34b" },
+    "code":     { "label": "コーディング",         "c1": "#4dabf7", "c2": "#22d3ee" },
+    "media":    { "label": "動画・音声",           "c1": "#f783ac", "c2": "#b197fc" },
+    "business": { "label": "ビジネス・生産性",     "c1": "#ffd43b", "c2": "#ff922b" },
+    "japan":    { "label": "日本発AI",             "c1": "#ff6b6b", "c2": "#f06595" }
+  },
+  "tools": [
+    {
+      "name": "ChatGPT",
+      "url": "https://chatgpt.com",
+      "cat": "chat",
+      "desc": "OpenAIの対話型AI。文章作成からコーディング、画像生成まで幅広くこなす定番。",
+      "tags": ["対話", "GPT", "定番"]
+    },
+    {
+      "name": "Claude",
+      "url": "https://claude.ai",
+      "cat": "chat",
+      "desc": "Anthropic製。長文読解・コーディング・自然な日本語に定評があるAIアシスタント。",
+      "tags": ["対話", "長文", "コーディング"]
+    },
+    {
+      "name": "Gemini",
+      "url": "https://gemini.google.com",
+      "cat": "chat",
+      "desc": "GoogleのマルチモーダルAI。検索やWorkspaceとの連携が強み。",
+      "tags": ["Google", "マルチモーダル", "連携"]
+    },
+    {
+      "name": "Perplexity",
+      "url": "https://www.perplexity.ai",
+      "cat": "chat",
+      "desc": "出典付きで回答するAI検索エンジン。リサーチや事実確認に最適。",
+      "tags": ["検索", "リサーチ", "出典"]
+    },
+    {
+      "name": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com",
+      "cat": "chat",
+      "desc": "Windows・Officeに統合されたMicrosoftのAIアシスタント。",
+      "tags": ["Microsoft", "Office", "統合"]
+    },
+    {
+      "name": "Grok",
+      "url": "https://grok.com",
+      "cat": "chat",
+      "desc": "xAIのチャットAI。X（旧Twitter）のリアルタイム情報にアクセスできる。",
+      "tags": ["xAI", "リアルタイム", "X"]
+    },
+    {
+      "name": "Mistral Le Chat",
+      "url": "https://chat.mistral.ai",
+      "cat": "chat",
+      "desc": "欧州Mistral AIの高速チャット。軽快なレスポンスが特徴。",
+      "tags": ["高速", "欧州", "軽量"]
+    },
+    {
+      "name": "Poe",
+      "url": "https://poe.com",
+      "cat": "chat",
+      "desc": "複数のAIモデルを1か所で比較・利用できるプラットフォーム。",
+      "tags": ["比較", "マルチモデル", "ボット"]
+    },
+    {
+      "name": "NotebookLM",
+      "url": "https://notebooklm.google.com",
+      "cat": "chat",
+      "desc": "資料を読み込ませて要約・分析・音声解説を生成するリサーチ特化AI。",
+      "tags": ["リサーチ", "要約", "音声"]
+    },
+
+    {
+      "name": "Midjourney",
+      "url": "https://www.midjourney.com",
+      "cat": "image",
+      "desc": "圧倒的な表現力を持つ画像生成AI。アート・コンセプトアートに強い。",
+      "tags": ["アート", "高品質", "定番"]
+    },
+    {
+      "name": "DALL·E 3",
+      "url": "https://openai.com/dall-e-3",
+      "cat": "image",
+      "desc": "ChatGPTからそのまま使える画像生成。細かい指示の理解度が高い。",
+      "tags": ["OpenAI", "手軽", "指示理解"]
+    },
+    {
+      "name": "Stable Diffusion",
+      "url": "https://stability.ai",
+      "cat": "image",
+      "desc": "オープンソースの画像生成モデル。ローカル実行やカスタマイズが可能。",
+      "tags": ["OSS", "ローカル", "カスタム"]
+    },
+    {
+      "name": "Adobe Firefly",
+      "url": "https://firefly.adobe.com",
+      "cat": "image",
+      "desc": "商用利用しやすいAdobe製生成AI。PhotoshopやIllustratorと連携。",
+      "tags": ["Adobe", "商用OK", "連携"]
+    },
+    {
+      "name": "Leonardo AI",
+      "url": "https://leonardo.ai",
+      "cat": "image",
+      "desc": "ゲームアセットやキャラクター画の生成に強い画像AI。",
+      "tags": ["ゲーム", "キャラ", "アセット"]
+    },
+    {
+      "name": "Ideogram",
+      "url": "https://ideogram.ai",
+      "cat": "image",
+      "desc": "画像内の文字をきれいに描けるのが得意。ロゴやバナー作成に。",
+      "tags": ["文字入れ", "ロゴ", "バナー"]
+    },
+    {
+      "name": "Canva Magic Studio",
+      "url": "https://www.canva.com/magic-studio/",
+      "cat": "image",
+      "desc": "デザインツールCanvaに搭載されたAI機能群。資料も画像もこれ一つ。",
+      "tags": ["デザイン", "資料", "ノーコード"]
+    },
+    {
+      "name": "Krea",
+      "url": "https://www.krea.ai",
+      "cat": "image",
+      "desc": "リアルタイム生成とアップスケーリングが強力な画像AI。",
+      "tags": ["リアルタイム", "高解像度", "編集"]
+    },
+
+    {
+      "name": "Notion AI",
+      "url": "https://www.notion.so/product/ai",
+      "cat": "writing",
+      "desc": "Notion内で文章生成・要約・翻訳・タスク整理までこなす。",
+      "tags": ["メモ", "要約", "翻訳"]
+    },
+    {
+      "name": "Jasper",
+      "url": "https://www.jasper.ai",
+      "cat": "writing",
+      "desc": "マーケティング特化の文章生成AI。広告コピーやブログ記事に。",
+      "tags": ["マーケ", "広告", "ブログ"]
+    },
+    {
+      "name": "Copy.ai",
+      "url": "https://www.copy.ai",
+      "cat": "writing",
+      "desc": "コピーライティングと営業支援に強いAIライティングツール。",
+      "tags": ["コピー", "営業", "営業支援"]
+    },
+    {
+      "name": "Rytr",
+      "url": "https://rytr.me",
+      "cat": "writing",
+      "desc": "低コストで使いやすいライティング補助ツール。まず試すならここ。",
+      "tags": ["低コスト", "補助", "入門"]
+    },
+    {
+      "name": "Grammarly",
+      "url": "https://www.grammarly.com",
+      "cat": "writing",
+      "desc": "英文の文法・スペル・トーンをリアルタイムでチェック。",
+      "tags": ["英文", "校正", "チェック"]
+    },
+    {
+      "name": "DeepL",
+      "url": "https://www.deepl.com",
+      "cat": "writing",
+      "desc": "高精度な機械翻訳サービス。文章のトーン調整機能も便利。",
+      "tags": ["翻訳", "多言語", "定番"]
+    },
+    {
+      "name": "QuillBot",
+      "url": "https://quillbot.com",
+      "cat": "writing",
+      "desc": "言い換え・要約に特化したライティング支援。論文や英文に。",
+      "tags": ["言い換え", "要約", "英文"]
+    },
+
+    {
+      "name": "GitHub Copilot",
+      "url": "https://github.com/features/copilot",
+      "cat": "code",
+      "desc": "エディタに統合されるAIコーディング補助。コード補完の定番。",
+      "tags": ["補完", "GitHub", "定番"]
+    },
+    {
+      "name": "Cursor",
+      "url": "https://cursor.com",
+      "cat": "code",
+      "desc": "AI前提に設計されたコードエディタ。コードベース全体を理解して編集。",
+      "tags": ["エディタ", "AIネイティブ", "人気"]
+    },
+    {
+      "name": "Claude Code",
+      "url": "https://www.claude.com/product/claude-code",
+      "cat": "code",
+      "desc": "ターミナルで動くエージェント型コーディングツール。実装を丸ごと任せられる。",
+      "tags": ["CLI", "エージェント", "実装"]
+    },
+    {
+      "name": "v0",
+      "url": "https://v0.dev",
+      "cat": "code",
+      "desc": "プロンプトからUIコンポーネントを生成するVercelのツール。",
+      "tags": ["UI", "生成", "Web"]
+    },
+    {
+      "name": "Replit",
+      "url": "https://replit.com",
+      "cat": "code",
+      "desc": "ブラウザ完結の開発環境＋AIエージェント。公開まで一気通貫。",
+      "tags": ["開発環境", "ブラウザ", "ホスティング"]
+    },
+    {
+      "name": "Windsurf",
+      "url": "https://windsurf.com",
+      "cat": "code",
+      "desc": "エージェント機能を備えたAIエディタ。大規模な変更も自動で。",
+      "tags": ["エディタ", "エージェント", "自動"]
+    },
+    {
+      "name": "Bolt.new",
+      "url": "https://bolt.new",
+      "cat": "code",
+      "desc": "プロンプトからフルスタックアプリを生成・その場でデプロイ。",
+      "tags": ["アプリ", "フルスタック", "生成"]
+    },
+    {
+      "name": "Lovable",
+      "url": "https://lovable.dev",
+      "cat": "code",
+      "desc": "会話しながらWebアプリを作れるAIビルダー。ノーコードで開発。",
+      "tags": ["ノーコード", "アプリ", "会話"]
+    },
+
+    {
+      "name": "Runway",
+      "url": "https://runwayml.com",
+      "cat": "media",
+      "desc": "動画生成・編集の定番AIツール。映像制作のワークフローを変える。",
+      "tags": ["動画", "編集", "定番"]
+    },
+    {
+      "name": "Sora",
+      "url": "https://sora.com",
+      "cat": "media",
+      "desc": "OpenAIの動画生成モデル。高品質なショート映像を生成。",
+      "tags": ["動画", "OpenAI", "高品質"]
+    },
+    {
+      "name": "Pika",
+      "url": "https://pika.art",
+      "cat": "media",
+      "desc": "手軽に使える動画生成AI。ユニークなエフェクトが豊富。",
+      "tags": ["動画", "手軽", "エフェクト"]
+    },
+    {
+      "name": "HeyGen",
+      "url": "https://www.heygen.com",
+      "cat": "media",
+      "desc": "アバター動画を簡単に作成。多言語の音声にも対応。",
+      "tags": ["アバター", "多言語", "動画"]
+    },
+    {
+      "name": "Synthesia",
+      "url": "https://www.synthesia.io",
+      "cat": "media",
+      "desc": "研修・マニュアル向けのアバター動画制作。企業利用に強い。",
+      "tags": ["アバター", "研修", "企業"]
+    },
+    {
+      "name": "ElevenLabs",
+      "url": "https://elevenlabs.io",
+      "cat": "media",
+      "desc": "高品質な音声合成・ボイスクローン。ナレーション制作に最適。",
+      "tags": ["音声", "TTS", "クローン"]
+    },
+    {
+      "name": "Suno",
+      "url": "https://suno.com",
+      "cat": "media",
+      "desc": "プロンプトから歌詞付きの楽曲を生成するAIミュージックツール。",
+      "tags": ["音楽", "作曲", "歌詞"]
+    },
+    {
+      "name": "Udio",
+      "url": "https://www.udio.com",
+      "cat": "media",
+      "desc": "高品質な楽曲生成AI。ジャンルや雰囲気を細かく指定できる。",
+      "tags": ["音楽", "作曲", "高品質"]
+    },
+    {
+      "name": "Descript",
+      "url": "https://www.descript.com",
+      "cat": "media",
+      "desc": "テキストを編集する感覚で音声・動画を編集できるツール。",
+      "tags": ["音声", "編集", "文字起こし"]
+    },
+
+    {
+      "name": "Gamma",
+      "url": "https://gamma.app",
+      "cat": "business",
+      "desc": "プロンプトからスライド資料を自動生成。デザイン不要で見栄えする。",
+      "tags": ["スライド", "資料", "生成"]
+    },
+    {
+      "name": "Notta",
+      "url": "https://www.notta.ai",
+      "cat": "business",
+      "desc": "会議の文字起こし・議事録作成を自動化するAI。日本語精度が高い。",
+      "tags": ["文字起こし", "会議", "議事録"]
+    },
+    {
+      "name": "Otter.ai",
+      "url": "https://otter.ai",
+      "cat": "business",
+      "desc": "会議の自動記録と要約。英語ミーティングとの相性が良い。",
+      "tags": ["会議", "記録", "要約"]
+    },
+    {
+      "name": "Beautiful.ai",
+      "url": "https://www.beautiful.ai",
+      "cat": "business",
+      "desc": "自動レイアウトで整ったプレゼン資料を作成できるツール。",
+      "tags": ["スライド", "デザイン", "自動"]
+    },
+    {
+      "name": "Miro AI",
+      "url": "https://miro.com/ai/",
+      "cat": "business",
+      "desc": "ホワイトボード上のアイデア整理やクラスタリングをAIが支援。",
+      "tags": ["アイデア", "ホワイトボード", "整理"]
+    },
+    {
+      "name": "Zapier AI",
+      "url": "https://zapier.com/ai",
+      "cat": "business",
+      "desc": "業務自動化ツールにAIを組み込み、ワークフローを賢くする。",
+      "tags": ["自動化", "連携", "業務"]
+    },
+    {
+      "name": "Fireflies.ai",
+      "url": "https://fireflies.ai",
+      "cat": "business",
+      "desc": "会議の録画・文字起こし・分析をまとめて自動化。",
+      "tags": ["会議", "分析", "文字起こし"]
+    },
+
+    {
+      "name": "AIのべりすと",
+      "url": "https://ai-novel.com",
+      "cat": "japan",
+      "desc": "日本語の小説・創作に強い国産AI。物語生成に特化している。",
+      "tags": ["小説", "創作", "日本語"]
+    },
+    {
+      "name": "ELYZA",
+      "url": "https://elyza.ai",
+      "cat": "japan",
+      "desc": "日本語LLMの研究・開発を行う国産AI企業。法人向けソリューションも。",
+      "tags": ["LLM", "日本語", "法人"]
+    },
+    {
+      "name": "rinna",
+      "url": "https://rinna.co.jp",
+      "cat": "japan",
+      "desc": "日本語に強い国産LLMを開発。対話モデルで知られる企業。",
+      "tags": ["LLM", "対話", "国産"]
+    },
+    {
+      "name": "Ubie",
+      "url": "https://ubie.ltd",
+      "cat": "japan",
+      "desc": "症状から適切な診療科を案内するAI問診サービス。",
+      "tags": ["医療", "問診", "ヘルスケア"]
+    },
+    {
+      "name": "PLaMo",
+      "url": "https://www.preferred.jp",
+      "cat": "japan",
+      "desc": "Preferred Networksが開発する日本語LLMシリーズ。",
+      "tags": ["LLM", "研究", "国産"]
+    },
+    {
+      "name": "LayerX バクラク",
+      "url": "https://bakuraku.jp",
+      "cat": "japan",
+      "desc": "AI-OCRで経費精算や請求書処理を自動化する業務効率化サービス。",
+      "tags": ["OCR", "経費", "業務"]
+    },
+    {
+      "name": "Stockmark",
+      "url": "https://stockmark.co.jp",
+      "cat": "japan",
+      "desc": "ビジネス特化の日本語AI。企業情報のリサーチや分析に強い。",
+      "tags": ["ビジネス", "リサーチ", "分析"]
+    },
+    {
+      "name": "Sakana AI",
+      "url": "https://sakana.ai",
+      "cat": "japan",
+      "desc": "進化型モデルなど独創的な研究で知られる国産AI企業。",
+      "tags": ["研究", "モデル", "国産"]
+    },
+    {
+      "name": "SB Intuitions",
+      "url": "https://www.sbintuitions.co.jp",
+      "cat": "japan",
+      "desc": "ソフトバンクグループの日本語LLM開発会社。大規模モデルを研究。",
+      "tags": ["LLM", "日本語", "法人"]
+    }
+  ]
+}
